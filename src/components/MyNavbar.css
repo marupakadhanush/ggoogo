@@ -1,0 +1,68 @@
+/* MyNavbar.css */
+
+/* Style for the entire navbar */
+.custom-navbar {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the navbar brand */
+.navbar-brand-custom {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Style for the navigation links */
+.custom-nav .nav-link-custom {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-right: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover effect for navigation links */
+.custom-nav .nav-link-custom:hover {
+    color: #007bff;
+}
+
+/* Responsive layout for tablet screens (768px to 991px) */
+@media (max-width: 991px) {
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .custom-nav .nav-link-custom {
+        flex: 1 1 auto;
+        text-align: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive layout for mobile screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .custom-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .custom-nav .nav-link-custom {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand-custom {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
